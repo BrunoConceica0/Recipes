@@ -1,18 +1,17 @@
 {% include "recipes/partials/header.html" %}
 
 <body>
-{% include "recipes/pages/header.html" %}
+  {% comment %} Header {% endcomment %}
+  {% include "recipes/pages/header.html" %}
+  {% comment %} Search Input {% endcomment %}
+  {% include "recipes/partials/search.html" %}
+  {% comment %} Recipes card {% endcomment %}
+  <main class="main-contente-container">
+ {% include "recipes/partials/recipe.html" %}
+ {% include "recipes/partials/recipe.html" %}
 
-
- <div class="search-container">
-  <div class="container">
-    <form action="" class="search-form ">
-      <input class="search-input" type="search" name="search">
-      <button class="search-btn" type="submit"><i class="bi bi-search"></i></button>
-    </form>
-  </div>
-
-  </div> 
+  </main>
+  {% include "recipes/partials/footer.html" %}
 </body>
 
 </html>
