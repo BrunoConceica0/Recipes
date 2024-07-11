@@ -6,3 +6,5 @@ from django.http import HttpResponse
 def Home(request):
   return render(request, "recipes/pages/home.html")
 
+def recipes (request, id):
+  return render(request,"recipes/pages/home.html" )
