@@ -1,0 +1,16 @@
+{% include "recipes/partials/header.html" %}
+
+<body>
+  {% comment %} Header {% endcomment %}
+  {% include "recipes/pages/header.html" %}
+  {% comment %} Search Input {% endcomment %}
+  {% include "recipes/partials/search.html" %}
+  {% comment %} Recipes card {% endcomment %}
+  <main class="main-contente-container">
+ {% include "recipes/partials/recipe.html" %}
+
+  </main>
+  {% include "recipes/partials/footer.html" %}
+</body>
+
+</html>
