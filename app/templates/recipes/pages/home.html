@@ -1,10 +1,16 @@
 {% extends "global/base.html" %}
-{% block title %}
-Home |
-{% endblock title %}
+
+{% block title %}Home{% endblock title %}
+
 
     {% block content %}
- {% include "recipes/partials/recipe.html" %}
- {% include "recipes/partials/recipe.html" %}
+    
+    {% comment %} O for, ele vai fazer 10vez a página recipes {% endcomment %}
+      {%for recipe in  recipes  %}
+
+        {% include "recipes/partials/recipe.html" %}
+
+        {% endfor %}
+
     {% endblock content %}
 
